@@ -4,7 +4,8 @@
   "description": "Design and implement a backend for a daily-expenses sharing application. This application will allow users to add expenses and split them based on three different methods: exact amounts, percentages, and equal splits. The application should manage user details, validate inputs, and generate downloadable balance sheets.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "test":  "mocha --timeout 10000"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +13,13 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
+    "chai": "^5.1.1",
     "express": "^4.19.2",
     "express-validator": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.7.0",
     "mongoose": "^8.5.1",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   }
 }
